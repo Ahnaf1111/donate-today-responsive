@@ -70,7 +70,7 @@ margin-bottom: 30px;
 /* header style end */
 /* main style  */
 /* donate plan section */
-.donate-text{
+.donate-text, .today-text{
     text-align: center;
     margin-bottom: 50px;
 }
@@ -103,6 +103,29 @@ background-color: rgba(255, 89, 89, 0.10);
     border-radius: 5px;
     background-color: #FFF4D6;
 }
+/* donate-today section */
+.box-container{
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+.box{
+    border-radius: 5px;
+    background: #FAFAFA;  
+    padding: 40px 25px;  
+    color: #707070;
+font-family: Inter;
+font-size: 2.2rem;
+font-weight: 700;
+}
+.box:hover{
+    border-radius: 5px;
+    border: 2px solid #FF5959;
+    background: #FEE;
+    color: #FF5959;
+    transform: rotate(360deg);
+    transition: ease 0.3s;
+}
 
 
 
@@ -126,6 +149,10 @@ background-color: rgba(255, 89, 89, 0.10);
     /* donate plan */
     .donate-card-container{
         flex-direction: column;
+    }
+    /* donate today */
+    .box-container{
+        flex-wrap: wrap;
     }
 
 }
