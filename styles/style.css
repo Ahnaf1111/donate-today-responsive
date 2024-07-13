@@ -117,14 +117,58 @@ background-color: rgba(255, 89, 89, 0.10);
 font-family: Inter;
 font-size: 2.2rem;
 font-weight: 700;
+border: 2px solid white;
 }
 .box:hover{
     border-radius: 5px;
     border: 2px solid #FF5959;
     background: #FEE;
     color: #FF5959;
-    transform: rotate(360deg);
-    transition: ease 0.3s;
+    /* transform: rotate(360deg); */
+    transition:margin 0.3s ease-in-out ;
+    margin:0 30px 0;
+}
+/* miserable */
+.miserable{
+    margin-top: 50px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 50px;
+}
+.top-text{
+    flex: 1;
+}
+.top-img{
+    flex: 1;
+}
+.down{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+}
+.top-img>img{
+    height: 100%;
+    width: 100%;
+}
+/* update section */
+.update-input{
+    padding: 76px 188px;
+    background-color: #FFF4D6;
+    text-align: center;
+}
+.update-input>input[type="text"]{
+    padding: 18px 17px;
+    width: 800px;
+    color: #AA9F9F;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 125% */
 }
 
 
@@ -154,5 +198,22 @@ font-weight: 700;
     .box-container{
         flex-wrap: wrap;
     }
+    /* miserable */
+    .top{
+        flex-direction: column-reverse;
+    }
+    .down{
+        flex-direction: column-reverse;
+    }
+    /* updates */
+    .update-input{
+        padding: 76px 0;
+    }
 
+    .update-input>input[type="text"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    
 }
